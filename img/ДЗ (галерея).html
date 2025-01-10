@@ -1,0 +1,156 @@
+!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея гончарної майстерні</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(bisque, lightpink);
+            font-size: 18px;
+            text-align: justify;
+            background-size: cover
+        }
+        .container {
+            margin: 10px;
+            padding: 0px;
+        }
+        .img-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .img-container .img{
+            width: 450px;
+            height: 350px;
+            border: 10px;
+            overflow: hidden;
+            border: 3px darkkhaki solid;
+            border-radius: 20px;
+            padding: 0px;
+        }
+        .img-container .img
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            text-indent: 30px;
+        }
+        a {
+            color: palevioletred;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 40px;
+        }      
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+			height: 50px;
+            top: 0;
+            left: 0; 
+            width: 100%; 
+            z-index: 1000;
+        }
+        nav a {
+			color: white;
+			margin: 10px;
+			line-height: 50px;
+			font-size: 17px;
+			text-decoration: none;
+			padding: 10px;
+			border-radius: 10px;
+			transition: background-color 0.3s ease;
+		}
+		nav a:hover {
+			background-color: palevioletred;
+			text-decoration: none;
+		}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#description">Знайомство з BeArt</a>
+        <a href="#photo">Фотогалерея</a>
+        <a href="#video">Відео</a>
+        <a href="#contacts">Контакти</a>
+
+    </nav>
+
+    <section id="description">
+    <div class="container">
+        <header>
+            <h1>Знайомство з BeArt</h1>
+            <p>У BeArt працюють майстри з багаторічним досвідом роботи. Педагоги проводять творчі майстер-класи для дітей і дорослих незалежно від навичок. 
+            Для кожного учня готують повноцінне робоче місце на час уроку. Всі матеріали, що використовують у школі, виготовлені з натуральних компонентів.</p>
+            <p>Спочатку кожному видадуть усе необхідне: фартух для роботи, інвентар і глину. 
+            Потім почнеться творчий процес. Майстер допоможе сформувати виріб, після чого клієнти одночасно почнуть працювати на гончарному крузі. 
+            Профі допоможе та скорегує їхні дії у разі необхідності. Кожен учасник зможе зробити 1 виріб середнього розміру. 
+            Якщо залишиться час, кожен із клієнтів зможе зліпити окремо фігурку, статуетку або задекорувати свій виріб.</p>
+        </header>
+    </section>
+
+    <section id="photo">
+    <h2>Фотогалерея</h2>
+        <div class="img-container">
+            <div class="img">
+                <img src="1.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="2.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="3.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="4.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="5.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="6.jpg" alt="">
+            </div>
+    </section>
+
+        <section id="video">
+            <h2>Відео-запис майстер-класу</h2>
+            <p align="center">
+            <iframe width="650" height="405" src="https://www.youtube.com/embed/0XppTGHCNnI?si=7RxVszphW1__XqyL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+        </section>
+
+    <hr>
+    <hr>
+
+        <section id="contacts">
+            <h2>Контакти</h2>
+            <p>Номер телефону: +38 (050) 035 00 27</p>
+            <p>Розташування: м. Харків, ст. м. Левада, просп. Аерокосмічний, 1.
+            <p>Графік можливих записів:<p>
+            <p>Понеділок, Середа, П'ятниця: Вихідний</p>
+            <p>Вівторок, Четвер: 16:00-18:00</p>
+            <p>Субота, Неділя: 11:00-15:00</p>
+        </section>
+</body>
+</html>
